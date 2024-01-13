@@ -1,5 +1,5 @@
 # author: Diego Ferruzzo Correa
-# date: 26/03/2023
+# date: 13/01/2024
 
 from numpy import array, zeros, sin, cos, tan, matmul, tan, absolute, floor, arctan2, sqrt, vectorize
 from numpy.linalg import inv
@@ -8,7 +8,6 @@ from myfunctions import rk4
 from simple_pid import PID
 
 class Drone:
-    #
     def __init__(self):
         self.Ir = 1e-3       # motor's moment of inertia
         self.Ixx = 16.83e-3  # x-axis inertia

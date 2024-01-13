@@ -1,18 +1,19 @@
 """
 @author: Diego Ferruzzo Correa
-@date: 07/07/2022
+@date: 13/01/2024
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
 sys.path.append('../../Minhas-funcs/')
-from drone import *
+from drone import Drone
 from myfunctions import *
 
 
 #test()
-#x0 = array([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12]])
-mydrone = drone()
-#print("x0=", x0)
-#print(mydrone.dynamics(x0))
+
+mydrone = Drone()
+x0 = np.array([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12]])
+print("x0=", x0)
+print(mydrone.dynamics(x0))
