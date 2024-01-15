@@ -3,7 +3,7 @@
 Modelo de drone quadrirrotor em python. O modelo implementado é:
 
 $$
-\begin{align*}
+\begin{align}
     \ddot{x}_I &= (\cos\phi\cos\psi\sin\theta+\sin\phi\sin\psi)U_1/m\\
     \ddot{y}_I &= (\cos\phi\sin\psi\sin\theta-\cos\psi\sin\phi)U_1/m\\
     \ddot{z}_I &= -g + \cos\phi\cos\theta U_1/m\\
@@ -11,7 +11,7 @@ $$
     \dot q &= ((I_{zz}-I_{xx})/I_{yy})pr + (I_r\Omega_r/I_{yy})p+U_3/I_{yy}\\
     \dot r &= ((I_{xx}-I_{yy})/I_{zz})pq+U_4/I_{zz}\\
     \dot{\eta}&=W\omega
-\end{align*}
+\end{align}
 $$
 
 onde $\eta=(\phi,\theta,\psi)'$ representa os ângulos de Euler, $\omega=(p,q,r)'$ e
