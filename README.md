@@ -1,5 +1,6 @@
 # Python quadrotor model
 Modelo de drone quadrirrotor em python. O modelo implementado é:
+
 $$
 \begin{align*}
     \ddot{x}_I &= (\cos\phi\cos\psi\sin\theta+\sin\phi\sin\psi)U_1/m\\
@@ -11,7 +12,9 @@ $$
     \dot{\eta}&=W\omega
 \end{align*}
 $$
+
 onde $\eta=(\phi,\theta,\psi)'$ representa os ângulos de Euler, $\omega=(p,q,r)'$ e
+
 $$
 W=\begin{pmatrix}
 1 & \tan\theta\sin\phi & \tan\theta\cos\phi\\
@@ -19,8 +22,11 @@ W=\begin{pmatrix}
 0 & \sin\phi/\cos\theta & \cos\phi/\cos\theta
 \end{pmatrix}.
 $$
+
 ## Vetor de estado
+
 Escolhemos como vetor de estado,
+
 $$
 \begin{align*}
 x_1&=x\\
@@ -37,7 +43,9 @@ x_{11}&=\theta\\
 x_{12}&=\psi.
 \end{align*}
 $$
+
 logo,
+
 $$
 \begin{align*}
 \dot x_1&=x_2\\
