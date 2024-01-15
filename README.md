@@ -4,9 +4,9 @@ Modelo de drone quadrirrotor em python. O modelo implementado é:
 
 $$
 \begin{align*}
-    \ddot{x}_I &= (\cos\phi\cos\psi\sin\theta+\sin\phi\sin\psi)U_1/m\\
-    \ddot{y}_I &= (\cos\phi\sin\psi\sin\theta-\cos\psi\sin\phi)U_1/m\\
-    \ddot{z}_I &= -g + \cos\phi\cos\theta U_1/m\\
+    \ddot{x} &= (\cos\phi\cos\psi\sin\theta+\sin\phi\sin\psi)U_1/m\\
+    \ddot{y} &= (\cos\phi\sin\psi\sin\theta-\cos\psi\sin\phi)U_1/m\\
+    \ddot{z} &= -g + \cos\phi\cos\theta U_1/m\\
     \dot p &= ((I_{yy}-I_{zz})/I_{xx})qr - (I_r\Omega_r/I_{xx})q+U_2/I_{xx}\\
     \dot q &= ((I_{zz}-I_{xx})/I_{yy})pr + (I_r\Omega_r/I_{yy})p+U_3/I_{yy}\\
     \dot r &= ((I_{xx}-I_{yy})/I_{zz})pq+U_4/I_{zz}\\
